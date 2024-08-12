@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego de la Pelota</title>
+    <style>.container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pelota {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .arco {
+        position: absolute;
+        right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/OIP.ogMkWFRx2TWFLaScRAREYgHaHa?w=202&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Pelota" class="pelota">
+        <img src="https://th.bing.com/th/id/OIP.T18s6R0Lp8O9PsMtUV_kzgHaHU?w=183&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Arco" class="arco">
+    </div>
+    <script>const pelota = document.querySelector('.pelota');
+
+        pelota.addEventListener('click', () => {
+            pelota.style.left = '80%'; // Ajusta este valor según el tamaño de tu pantalla
+            setTimeout(() => {
+                window.open( "mensajess.html" ,'_blank');
+            }, 1000); // Abre la nueva ventana después de 1 segundo
+        });
+        </script>
+</body>
+</html>
